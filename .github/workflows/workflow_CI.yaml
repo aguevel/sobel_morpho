@@ -14,16 +14,10 @@ jobs:
 
       - name: Build and Execute
         run: |
-        mkdir bin
-        cd bin
-        mkdir make
-        cd make
-        cmake ..
-        make
+        gcc hello.c
         
       - name: Build and Execute
         run: |
-        cd build
         ./a.out
         
         
