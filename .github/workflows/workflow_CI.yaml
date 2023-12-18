@@ -14,14 +14,14 @@ jobs:
 
       - name: Build and Execute
         run: |
-         mkdir bin
-	 cd bin
-	 mkdir make
-	 cd make
-	 cmake ..
-	 make
+        mkdir bin
+        cd bin
+        mkdir make
+        cd make
+        cmake ..
+        make
 	 
       - name: Build and Execute
         run: |
-           cd build
-          ./sobel
+        cd build
+        ./sobel

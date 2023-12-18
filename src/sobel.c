@@ -30,7 +30,7 @@ void sobel(int width, int height, unsigned char *input, unsigned char *output) {
 
       output[(j - 1) * width + i] = (gx * gx + gy * gy) / 8; // TODO
       
-      printf("hello from sobel\n");
+ 
     }
     
     
@@ -41,4 +41,6 @@ void sobel(int width, int height, unsigned char *input, unsigned char *output) {
     output[j * width] = 0;
     output[(j + 1) * width - 1] = 0;
   }
+  
+   printf("hello from sobel\n");
 }
