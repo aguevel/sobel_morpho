@@ -1,15 +1,27 @@
-name: Ci workflow
-on: 
-    push:
-    	branches: 
-    	- main
+name: CI Workflow
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout Repository 
-      uses: actions/checkout@v2
-      
-    - name: build and execute 
-      run: | 
-    	  gcc -o /src/sobel.c exe ./exe
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Build and Execute
+        run: |
+         mkdir bin
+	 cd bin
+	 mkdir make
+	 cd make
+	 cmake ..
+	 make
+	 
+      - name: Build and Execute
+        run: |
+           cd build
+          ./sobel
