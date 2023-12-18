@@ -2,13 +2,13 @@ name: Ci workflow
 on: 
     push:
     	branches: 
-    	-main
+    	- main
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    -name: Checkout Repository 
-     uses: actions/checkout@v2
+    - name: Checkout Repository 
+      uses: actions/checkout@v2
       
     - name: build and execute 
       run: | 
