@@ -20,7 +20,7 @@ jobs:
         cd make
         cmake ..
         make
-	 
+        
       - name: Build and Execute
         run: |
         cd build
