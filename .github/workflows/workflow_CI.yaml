@@ -25,6 +25,6 @@ jobs:
       - name: Build and Execute
         run: |
           ./CMakeGCC.sh
-          make CMakefile
+          make  # Utilisation du Makefile généré automatiquement par CMake
           ./sobel.exe
 
